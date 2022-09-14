@@ -1,10 +1,12 @@
+let btn = document.getElementById('btn')
+btn.addEventListener('click', Clicou)
+
 function Clicou(){
     let inicial = Number(document.getElementById('numeroInicial').value)
     let final = Number(document.getElementById('numeroFinal').value)
     let pular = Number(document.getElementById('numeroPular').value)
-    let msg = document.getElementById('msg')
-    let btn = document.getElementById('btn')
-    msg.innerHTML = ''
+    let msg = document.getElementById('msg')   
+    msg.innerHTML = '' 
 
     if(inicial == 0 || final == 0 || pular < 0){
         window.alert('Erro')
@@ -22,5 +24,9 @@ function Clicou(){
                 msg.innerHTML += `${inicial}\u{1F448} `  
                 }
         }
+        if(inicial === final){
+            msg.innerHTML +=  `${inicial}\u{1F448}`
+        }
+            msg.innerHTML += 'Fim!'
     }
 }
