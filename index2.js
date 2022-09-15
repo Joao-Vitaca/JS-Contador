@@ -1,4 +1,5 @@
-export default function ClicouBotao(){
+export default  clicouBotao
+function clicouBotao(){
     let inicial = Number(document.getElementById('numeroInicial').value)
     let final = Number(document.getElementById('numeroFinal').value)
     let pular = Number(document.getElementById('numeroPular').value)
